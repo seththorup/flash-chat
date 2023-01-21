@@ -16,7 +16,7 @@ class ChatViewController: UIViewController {
     
     let messages:[Message] = [
         Message(sender: "1@2.com", body: "What is up?"),
-        Message(sender: "2@2.com", body: "Not much"),
+        Message(sender: "2@2.com", body: "Not much, I am learning how to create a application... 🥦"),
         Message(sender: "1@2.com", body: "cool"),
     ]
     
@@ -26,6 +26,8 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         navigationItem.hidesBackButton = true
+        
+        tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
         
     }
     
@@ -48,8 +50,8 @@ extension ChatViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = messages[indexPath.row].body
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
+        cell.label.text = messages[indexPath.row].body
         return cell
     }
     
