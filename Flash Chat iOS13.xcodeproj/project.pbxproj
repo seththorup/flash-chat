@@ -19,6 +19,10 @@
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
 		5D1476BD297A4D73007860E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D1476BC297A4D73007860E4 /* GoogleService-Info.plist */; };
 		5D1476C0297A4DE1007860E4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5D1476BF297A4DE1007860E4 /* FirebaseAuth */; };
+		5D2994CF297BB1FD00309C45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2994CE297BB1FD00309C45 /* Constants.swift */; };
+		5D2994D1297BB30B00309C45 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2994D0297BB30B00309C45 /* Message.swift */; };
+		5D2994D4297C813100309C45 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2994D2297C813100309C45 /* MessageCell.swift */; };
+		5D2994D5297C813100309C45 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2994D3297C813100309C45 /* MessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		0B628190235DF01B00E35CAF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5D1476BC297A4D73007860E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5D2994CE297BB1FD00309C45 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Views/Constants.swift; sourceTree = "<group>"; };
+		5D2994D0297BB30B00309C45 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Flash Chat iOS13/Views/Message.swift"; sourceTree = SOURCE_ROOT; };
+		5D2994D2297C813100309C45 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		5D2994D3297C813100309C45 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
 				5D1476BC297A4D73007860E4 /* GoogleService-Info.plist */,
+				5D2994CE297BB1FD00309C45 /* Constants.swift */,
 			);
 			path = "Flash Chat iOS13";
 			sourceTree = "<group>";
@@ -97,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				0B62817C235DEE8100E35CAF /* Main.storyboard */,
+				5D2994D2297C813100309C45 /* MessageCell.swift */,
+				5D2994D3297C813100309C45 /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +115,7 @@
 		0B628194235DF03A00E35CAF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5D2994D0297BB30B00309C45 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
+				5D2994D5297C813100309C45 /* MessageCell.xib in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
 				5D1476BD297A4D73007860E4 /* GoogleService-Info.plist in Resources */,
 				0B62819E235F0F4D00E35CAF /* README.md in Resources */,
@@ -188,11 +201,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B62818B235DF00000E35CAF /* WelcomeViewController.swift in Sources */,
+				5D2994D1297BB30B00309C45 /* Message.swift in Sources */,
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
+				5D2994CF297BB1FD00309C45 /* Constants.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
+				5D2994D4297C813100309C45 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
